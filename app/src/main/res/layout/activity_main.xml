@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Main">
+
+    <EditText
+        android:id="@+id/user"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:ems="10"
+        android:hint="usuario:"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/senha"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:ems="10"
+        android:hint="senha:"
+        android:inputType="textPassword"
+        app:layout_constraintEnd_toEndOf="@+id/user"
+        app:layout_constraintStart_toStartOf="@+id/user"
+        app:layout_constraintTop_toBottomOf="@+id/user" />
+
+    <Button
+        android:id="@+id/cadastro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="200dp"
+        android:onClick="cadastrar"
+        android:text="Cadastrar"
+        app:layout_constraintEnd_toEndOf="@+id/senha"
+        app:layout_constraintStart_toStartOf="@+id/senha"
+        app:layout_constraintTop_toBottomOf="@+id/senha" />
+
+    <CheckBox
+        android:id="@+id/mostrar_senha"
+        android:layout_width="127dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="10dp"
+        android:onClick="m_senha"
+        android:text="Mostrar Senha"
+        app:layout_constraintStart_toStartOf="@+id/senha"
+        app:layout_constraintTop_toBottomOf="@+id/senha" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
