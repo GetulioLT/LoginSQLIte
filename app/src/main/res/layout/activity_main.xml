@@ -7,7 +7,7 @@
     tools:context=".Main">
 
     <EditText
-        android:id="@+id/user"
+        android:id="@+id/main_user"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="100dp"
@@ -19,27 +19,27 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
-        android:id="@+id/senha"
+        android:id="@+id/main_senha"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="50dp"
         android:ems="10"
         android:hint="senha:"
         android:inputType="textPassword"
-        app:layout_constraintEnd_toEndOf="@+id/user"
-        app:layout_constraintStart_toStartOf="@+id/user"
-        app:layout_constraintTop_toBottomOf="@+id/user" />
+        app:layout_constraintEnd_toEndOf="@+id/main_user"
+        app:layout_constraintStart_toStartOf="@+id/main_user"
+        app:layout_constraintTop_toBottomOf="@+id/main_user" />
 
     <Button
-        android:id="@+id/cadastro"
+        android:id="@+id/btn_login"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="200dp"
-        android:onClick="cadastrar"
-        android:text="Cadastrar"
-        app:layout_constraintEnd_toEndOf="@+id/senha"
-        app:layout_constraintStart_toStartOf="@+id/senha"
-        app:layout_constraintTop_toBottomOf="@+id/senha" />
+        android:onClick="m_login"
+        android:text="Login"
+        app:layout_constraintEnd_toEndOf="@+id/main_senha"
+        app:layout_constraintStart_toStartOf="@+id/main_senha"
+        app:layout_constraintTop_toBottomOf="@+id/main_senha" />
 
     <CheckBox
         android:id="@+id/mostrar_senha"
@@ -48,7 +48,17 @@
         android:layout_marginTop="10dp"
         android:onClick="m_senha"
         android:text="Mostrar Senha"
-        app:layout_constraintStart_toStartOf="@+id/senha"
-        app:layout_constraintTop_toBottomOf="@+id/senha" />
+        app:layout_constraintStart_toStartOf="@+id/main_senha"
+        app:layout_constraintTop_toBottomOf="@+id/main_senha" />
+
+    <Button
+        android:id="@+id/main_cadastrar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:text="Cadastrar"
+        app:layout_constraintEnd_toEndOf="@+id/btn_login"
+        app:layout_constraintStart_toStartOf="@+id/btn_login"
+        app:layout_constraintTop_toBottomOf="@+id/btn_login" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
